@@ -6,7 +6,7 @@
   "author": "Nacho Martin",
   "license": "MIT",
   "scripts": {
-    "build": "babel-node  --presets react src/index.js"
+    "build": "babel-node  --presets react src/index.js ../liform-react/docs/pages/ ../liform-react/built_docs/"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
