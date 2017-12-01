@@ -1,4 +1,4 @@
-import styled from "styled-components";
+const styled = require("styled-components").default;
 
 module.exports = styled.div`
   padding-left: ${props => (props.depth * 10 + 4) + "px"};

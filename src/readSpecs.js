@@ -4,8 +4,12 @@ const {
 
 async function readSpecs(path) {
   const specJson = await readFile(path);
-  const spec = JSON.parse(specJson);
-  return spec;
+  try {
+    const spec = JSON.parse(specJson);
+    return spec;
+  } catch (e) {
+    console.log(path+ " " +e);
+  }
 }
 
 module.exports = readSpecs;
